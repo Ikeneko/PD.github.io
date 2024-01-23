@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>集めまっし金沢ラリー</title>
+        <link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="button.css">
+		<link rel="stylesheet" href="stamp.css">
+		<script src="./jsQR.js"></script>
+		<script>
+		var now = new Date();	
+		function LoadProc(ID) {
+			var Year = now.getFullYear();
+			var Month = now.getMonth()+1;
+			var Date = now.getDate();
+
+			var today = Year + "." + Month + "." + Date;
+
+			ID.setAttribute("data-date", today);
+		}
+		</script>
+    </head>
+
+    <body>
+
+        <div class="header">
+            <h1>集めまっし金沢ラリー!</h1>
+        </div>
+
+        <div id="main1" class="main1">
+            <h3>スタンプを集めて景品をもらおう!!</h3>
+            
+            <table id="stamp" cellspacing="10" border="1">
+                <tr> <td><img src="C:\Users\ryoso\Documents\4学期\プロジェクトデザイン実践\作業用\WebPages\21世紀.jpg" alt="21世紀美術館"><a href="https://www.kanazawa21.jp/">21世紀美術館</a></td>
+                     <td><img src="C:\Users\ryoso\Documents\4学期\プロジェクトデザイン実践\作業用\WebPages\kazunakasima.jpeg" alt="Kazunakashima"><a href="https://kazunakashima.gorp.jp/">菓舗Kazu Nakashima</a></td>
+                </tr> 
+                <tr> <td><img src="C:\Users\ryoso\Documents\4学期\プロジェクトデザイン実践\作業用\WebPages\いきいき.jpg" alt="いきいき亭"><a href="https://ohmicho-ichiba.com/gourmet/shop70401/">いきいき亭</a></td>
+                     <td><img src="C:\Users\ryoso\Documents\4学期\プロジェクトデザイン実践\作業用\WebPages\オーツカ.jpg" alt="グリルオーツカ"><a href="https://www.instagram.com/grill_otsuka/?hl=ja">グリルオーツカ</a></td>
+                </tr>  
+                <tr> <td><img src="C:\Users\ryoso\Documents\4学期\プロジェクトデザイン実践\作業用\WebPages\おやま.jpg" alt="尾山神社"><a href="http://www.oyama-jinja.or.jp/">尾山神社</a></td>
+                     <td><img src="C:\Users\ryoso\Documents\4学期\プロジェクトデザイン実践\作業用\WebPages\きくいち.jpg" alt="菊一"><a href="https://www.kanazawabiyori.com/special/oden/2022/10/54835.html">菊一</a></td>
+                </tr>
+                <tr> <td><img src="C:\Users\ryoso\Documents\4学期\プロジェクトデザイン実践\作業用\WebPages\けんろく.jpg" alt="兼六園"><a href="https://kenrokuen.or.jp/">兼六園</a></td>
+                     <td><img src="C:\Users\ryoso\Documents\4学期\プロジェクトデザイン実践\作業用\WebPages\はくいち.jpg" alt="箔一"><a href="https://kanazawa.hakuichi.co.jp/">箔一</a></td>
+                </tr>
+                <tr> <td><img src="C:\Users\ryoso\Documents\4学期\プロジェクトデザイン実践\作業用\WebPages\ピノ.jpg" alt="ピノ"><a href="https://tabelog.com/ishikawa/A1701/A170101/17006391/">ピノ</a></td>
+                     <td><img src="C:\Users\ryoso\Documents\4学期\プロジェクトデザイン実践\作業用\WebPages\魚旨.jpg" alt="魚旨"><a href="https://ohmicho-ichiba.com/gourmet/shop70701/">魚旨</a></td>
+                </tr>
+            </table><br>
+			
+			<div>
+				＜スタンプラリーのやり方！＞
+				<ol>
+					<li>観光地を設定しよう!</li>
+					<li>”カメラ起動”をクリック！</li>
+					<li>観光地に設置されたQRコードを読み取り、ポイントを獲得！！</li>
+					<li>集めたポイントで景品と交換しよう！</li>
+				</ol>
+			</div><br>
+			
+			<div>
+				<p style="font-weight:bold;"><観光地の設定></p>
+				<p>観光地を10個設定してね！</p><br>
+				<input type="checkbox" name="spot" id="spot1" value="まるびぃ">まるびぃ（金沢21世紀美術館）<br>
+				<input type="checkbox" name="spot" id="spot2" value="近江町市場">近江町市場<br>
+				<input type="checkbox" name="spot" id="spot3" value="兼六園">兼六園<br>
+				<input type="checkbox" name="spot" id="spot4" value="ひがし茶屋街">ひがし茶屋街<br>
+				<input type="checkbox" name="spot" id="spot5" value="金沢城">金沢城<br>
+				<input type="checkbox" name="spot" id="spot6" value="湯涌温泉">湯涌温泉<br>
+				<input type="checkbox" name="spot" id="spot7" value="尾山神社">尾山神社<br>
+				<input type="checkbox" name="spot" id="spot8" value="国立工芸館">国立工芸館<br>
+				<input type="checkbox" name="spot" id="spot9" value="志摩">志摩<br>
+				<input type="checkbox" name="spot" id="spot10" value="妙立寺">妙立寺<br>
+				<input type="checkbox" name="spot" id="spot11" value="主計町茶屋街">主計町茶屋街<br>
+				<input type="checkbox" name="spot" id="spot12" value="長町武家屋敷">長町武家屋敷<br>
+				<input type="checkbox" name="spot" id="spot13" value="JR金沢駅">JR金沢駅<br>
+				<input type="checkbox" name="spot" id="spot14" value="玉泉園">玉泉園<br>
+				<input type="checkbox" name="spot" id="spot15" value="玉泉院丸庭園">玉泉院丸庭園<br>
+				<input type="checkbox" name="spot" id="spot16" value="浅野川大橋">浅野川大橋<br>
+			</div><br>
+			
+			<button class="styled1" type="button" onclick="check()">スタンプラリー作成</button><br><br>
+			
+			<font id="text" color="red" size="+2"></font>
+			
+			<script>
+			const maxChecks = 10;
+			const checkboxes = document.querySelectorAll('input[name="spot"]');
+
+			checkboxes.forEach((checkbox) => {
+				checkbox.addEventListener('change', () => {
+					const checkedCheckboxes = document.querySelectorAll('input[name="spot"]:checked');
+					if (checkedCheckboxes.length >= maxChecks) {
+						checkboxes.forEach((cb) => {
+							if (!cb.checked) {
+							cb.disabled = true;
+							}
+						});
+					} else {
+						checkboxes.forEach((cb) => {
+						cb.disabled = false;
+						});
+					}
+				});
+			});
+			
+			function check() {
+				const checkboxes = document.querySelectorAll('input[name="spot"]');
+				const checkedCheckboxes = document.querySelectorAll('input[name="spot"]:checked');
+				if (checkedCheckboxes.length == 10) {
+					document.getElementById("result1").textContent = checkedCheckboxes[0].value;
+					document.getElementById("result2").textContent = checkedCheckboxes[1].value;
+					document.getElementById("result3").textContent = checkedCheckboxes[2].value;
+					document.getElementById("result4").textContent = checkedCheckboxes[3].value;
+					document.getElementById("result5").textContent = checkedCheckboxes[4].value;
+					document.getElementById("result6").textContent = checkedCheckboxes[5].value;
+					document.getElementById("result7").textContent = checkedCheckboxes[6].value;
+					document.getElementById("result8").textContent = checkedCheckboxes[7].value;
+					document.getElementById("result9").textContent = checkedCheckboxes[8].value;
+					document.getElementById("result10").textContent = checkedCheckboxes[9].value;
+					
+					for (checkbox of checkboxes) {
+						checkbox.checked = false;
+						checkbox.disabled = false;
+					}
+					
+					let hidden = document.getElementById("main1");
+					let show = document.getElementById("main2");
+					hidden.style.display = "none";
+					show.style.display = "inline";
+				} else {
+					let text = document.getElementById("text");
+					text.textContent = "10個設定されていません";
+				}
+			}
+			</script>
+			
+			<div style="font-size:150%;">
+				景品交換ページはこちらから→<a href="keihin.html">リンク</a>
+			</div>
+			
+		</div>
+		
+		<div id="main2" class="main2">
+			<div>
+			<h3>スタンプを集めて景品をもらおう!!</h3>
+			
+			<div id="common" class="button" onclick="vew()">カメラ起動</div><br><br>
+			
+			<div style="text-align: center;"><canvas id="canvas"></canvas></div><br>
+			
+			<table id="set_stamp" cellspacing="15" "" border="1">
+                <tr><td height="150"><div id="result1" data-date=""></div></td><td height="150"><div id="result2" data-date=""></div></td></tr> 
+                <tr><td height="150"><div id="result3" data-date=""></div></td><td height="150"><div id="result4" data-date=""></div></td></tr>  
+                <tr><td height="150"><div id="result5" data-date=""></div></td><td height="150"><div id="result6" data-date=""></div></td></tr>
+                <tr><td height="150"><div id="result7" data-date=""></div></td><td height="150"><div id="result8" data-date=""></div></td></tr>
+                <tr><td height="150"><div id="result9" data-date=""></div></td><td height="150"><div id="result10" data-date=""></div></td></tr>
+            </table><br><br>
+	
+			<div style="font-size:150%;">
+				現在のポイント数：<span id="point"></span>pt
+			</div><br>
+			
+			<div id="compleat_stamp1" style="color: red;font-size: 200%;"></div><br>
+			<div id="compleat_stamp2" style="font-size: 200%;"></div><br>
+			<div id="target" class="styled2" type="button" style="text-align: center;" onclick="stamprally_list()">新たに設定！</div><br><br>
+			
+			<script>
+			var point = 0;
+			var myValue = localStorage.getItem("myValue");
+			document.getElementById("point").textContent = myValue;
+			var total_count =0;
+			var table_list = [result1, result2, result3, result4, result5, result6, result7, result8, result9, result10];
+			
+			
+			function vew() {
+				/*stamp("金沢城");*/
+				
+				document.getElementById("common").style.visibility = "hidden";
+				document.getElementById("canvas").style.display = "inline";
+				
+				var video = document.createElement("video");
+				var canvasElement = document.getElementById("canvas");
+				var canvas = canvasElement.getContext("2d");
+
+				function drawLine(begin, end, color) {
+					canvas.beginPath();
+					canvas.moveTo(begin.x, begin.y);
+					canvas.lineTo(end.x, end.y);
+					canvas.lineWidth = 4;
+					canvas.strokeStyle = color;
+					canvas.stroke();
+				}
+						
+				let stream;
+				navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } }).then(function(Mystream) {
+					stream = Mystream;
+					video.srcObject = stream;
+					video.setAttribute("playsinline", true);						
+					video.play();
+					requestAnimationFrame(tick);
+				});
+				
+				function tick() {
+					if (video.readyState === video.HAVE_ENOUGH_DATA) {
+						canvasElement.height = video.videoHeight;
+						canvasElement.width = video.videoWidth;
+						canvas.drawImage(video, 0, 0, canvasElement.width, canvasElement.height);
+						var imageData = canvas.getImageData(0, 0, canvasElement.width, canvasElement.height);
+						var code = jsQR(imageData.data, imageData.width, imageData.height, {
+							inversionAttempts: "dontInvert",
+						});
+						if (code) {
+							drawLine(code.location.topLeftCorner, code.location.topRightCorner, "#FF3B58");
+							drawLine(code.location.topRightCorner, code.location.bottomRightCorner, "#FF3B58");
+							drawLine(code.location.bottomRightCorner, code.location.bottomLeftCorner, "#FF3B58");
+							drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF3B58");
+							stamp(code.data);
+							// カメラを停止する
+							stream.getTracks().forEach(track => track.stop());
+							document.getElementById("canvas").style.display = "none";
+						}
+					}
+					requestAnimationFrame(tick);
+				}
+			}
+			
+			
+			function stamp(message) {
+				for (let i = 0; i < table_list.length; i += 1) {
+					let table_id = table_list[i];
+					var table_text = table_id.textContent;
+					if (table_text == message) {
+						if (table_id.getAttribute('class') != "stamp1") {
+							table_id.classList.add("stamp1");
+							LoadProc(table_id);
+							point += 1;
+							total_count += 1;
+						}
+					} 
+				}
+				
+				if (total_count == 1) {
+					total_count = 0;
+					let compleat_stamp1 = document.getElementById("compleat_stamp1");
+					compleat_stamp1.textContent = "Congratulations!";
+					let compleat_stamp2 = document.getElementById("compleat_stamp2");
+					compleat_stamp2.textContent = "新たに目的地を設定してね！";
+					document.getElementById("target").style.visibility = "visible";
+				}
+				document.getElementById("common").style.visibility = "visible";
+				document.getElementById("point").textContent = point;
+				localStorage.setItem("myValue", point);
+			}
+				
+			function stamprally_list(){
+				for (let i = 1; i < table_list.length; i += 1) {
+					let table_id = table_list[i];
+					var table_text = table_id.textContent;
+					if (table_id.getAttribute('class') == "stamp1") {
+						table_id.classList.remove("stamp1");
+						table_id.setAttribute("data-date", "");
+					}
+				}
+				let compleat_stamp1 = document.getElementById("compleat_stamp1");
+				compleat_stamp1.textContent = "";
+				let compleat_stamp2 = document.getElementById("compleat_stamp2");
+				compleat_stamp2.textContent = "";
+				document.getElementById("target").style.visibility = "hidden";
+				
+				let show = document.getElementById("main1");
+				let hidden = document.getElementById("main2");
+				hidden.style.display = "none";
+				show.style.display = "inline";
+			}
+			</script><br>
+			
+        </div>
+
+        <footer class="footer">
+			＜参考情報＞<br>
+			<a href="https://www4.city.kanazawa.lg.jp/index.html">金沢市ホームページ</a><br>
+            <a href="https://www.kanazawa-kankoukyoukai.or.jp/">金沢旅物語</a><br>
+        </footer>    
+
+    </body> 
+</html>
